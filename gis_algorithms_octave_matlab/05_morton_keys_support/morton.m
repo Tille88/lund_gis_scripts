@@ -1,0 +1,1 @@
+%%%%%%%MORTON FUNCTIONfunction mor=morton(x,y)    temp=0;    for i = 0 : 9        if mod(y,2)==1            temp = temp + 2^(2*i);y=y-1; end;        y=y/2;        if mod(x,2)==1            temp = temp + 2 * 2^(2*i);x=x-1; end;x=x/2; end;mor = temp;
